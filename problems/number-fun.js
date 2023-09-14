@@ -1,10 +1,20 @@
 function returnsThree() {
-  // Your code here
+  return 3
 }
 
 function reciprocal(n) {
-  // Your code here
+  return n < 1 || n > 1000000 ? RangeError(`Out of bounds`) : 1 / n
 }
+
+// try{
+//   console.log(reciprocal(-4))
+//   console.log(reciprocal(3))
+// }catch(e){
+//   console.log(e)
+// }
+
+console.log(reciprocal(3))
+  
 
 module.exports = {
   returnsThree,
