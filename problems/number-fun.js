@@ -3,17 +3,14 @@ function returnsThree() {
 }
 
 function reciprocal(n) {
-  return n < 1 || n > 1000000 ? RangeError(`Out of bounds`) : 1 / n
+  if (n >=1 && n <= 1000000)
+  return 1/n 
+ else  {
+  throw new RangeError("fail");
+ }
 }
 
-// try{
-//   console.log(reciprocal(-4))
-//   console.log(reciprocal(3))
-// }catch(e){
-//   console.log(e)
-// }
 
-console.log(reciprocal(3))
   
 
 module.exports = {
